@@ -4,17 +4,17 @@ body{
 }
 .header-container{
     display: flex;
-    width: 562;
-    height: 1075;
-    padding-top: 29px;
-    padding-left: 56px;
-    padding-right: 361px;
+    width: 281;
+    height: 537.5;
+    padding-top: 14.5px;
+    padding-left: 28px;
+    padding-right: 180.5px;
     background-color: #0D0D0D;
     color: #FFFFFF;
 }
 .heder-number{
     color:#FFFFFF;
-    padding-top: 147px;
-    padding-left: 199px;
-    padding-right: 191px;
+    padding-top: 73.5px;
+    padding-left: 99.5px;
+    padding-right: 95.5px;
 }
