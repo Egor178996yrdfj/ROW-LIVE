@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ROW-LIVE</title>
     <style>
-
+        body{
+            background-color: #0D0D0D
+        }
     </style>
 </head>
 <body>
