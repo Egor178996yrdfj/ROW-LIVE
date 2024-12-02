@@ -11,10 +11,11 @@ body{
     padding-right: 180.5px;
     background-color: #0D0D0D;
     color: #FFFFFF;
+    font-size: 24;
+    font-style: normal;
 }
 .heder-number{
     color:#FFFFFF;
     padding-top: 73.5px;
-    padding-left: 99.5px;
     padding-right: 95.5px;
 }
