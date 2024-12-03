@@ -6,16 +6,18 @@ body{
     display: flex;
     width: 281;
     height: 537.5;
-    padding-top: 14.5px;
-    padding-left: 28px;
-    padding-right: 180.5px;
-    background-color: #0D0D0D;
     color: #FFFFFF;
-    font-size: 24;
+    font-size: 1;
     font-style: normal;
 }
 .heder-number{
     color:#FFFFFF;
-    padding-top: 73.5px;
+    padding-top: 20px;
+    padding-left: 99.5px;
     padding-right: 95.5px;
+    font-size: 24;
+}
+.iconrower1{
+    padding-top: 73.5px;
+    padding-left: 0px;
 }
