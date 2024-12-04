@@ -10,14 +10,20 @@ body{
     font-size: 1;
     font-style: normal;
 }
-.heder-number{
-    color:#FFFFFF;
-    padding-top: 20px;
-    padding-left: 92px;
-    padding-right: 95.5px;
-    font-size: 24;
-}
 .iconrower1{
     padding-top: 220px;
     padding-right: 0px;
+}
+.wallet-number{
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 500ms ease;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
 }
