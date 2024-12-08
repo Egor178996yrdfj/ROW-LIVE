@@ -110,3 +110,14 @@ body{
     padding-top: 68px;
     padding-left: 125px;
 }
+.rowcolich{
+    font-size: 3rem;
+    padding-top: 3.5px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.ROWnumber1{
+    padding-left: 0px;
+    font-size: 1.8rem;
+    font-weight: initial;
+}
