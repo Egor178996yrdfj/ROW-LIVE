@@ -102,14 +102,12 @@ body{
 .heder-number{
     color:#FFFFFF;
     padding-top: 30px;
-    padding-left: 99px;
-    padding-right: 95.5px;
     font-size: 24;
+    text-align: center;
 }
 .logoup{
     padding-top: 68px;
-    padding-left: 125px;
-    text-align: center;
+    margin-left: 46%
 }
 .rowcolich{
     font-size: 3rem;
@@ -120,7 +118,6 @@ body{
 .ROWnumber1{
     padding-left: 0px;
     font-size: 1.8rem;
-    font-weight: initial;
 }
 .champrang{
     color: #848484;
