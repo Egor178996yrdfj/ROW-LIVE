@@ -94,7 +94,7 @@ body{
 .header-container{
     display: flex;
     width: auto;
-    height: 537.5;
+    height: auto;
     color: #FFFFFF;
     font-size: 1;
     font-style: normal;
@@ -102,9 +102,7 @@ body{
 .logoup{
     padding-top: 68px;
     width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 47%;
 }
 .rowcolich{
     font-size: 3rem;
