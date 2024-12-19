@@ -93,21 +93,18 @@ body{
 }
 .header-container{
     display: flex;
-    width: 281;
+    width: auto;
     height: 537.5;
     color: #FFFFFF;
     font-size: 1;
     font-style: normal;
 }
-.heder-number{
-    color:#FFFFFF;
-    padding-top: 30px;
-    font-size: 24;
-    text-align: center;
-}
 .logoup{
     padding-top: 68px;
-    margin-left: 46%
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rowcolich{
     font-size: 3rem;
