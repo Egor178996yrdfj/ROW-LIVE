@@ -93,8 +93,6 @@ body{
 }
 .header-container{
     display: flex;
-    width: auto;
-    height: auto;
     color: #FFFFFF;
     font-size: 1;
     font-style: normal;
