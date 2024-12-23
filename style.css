@@ -119,9 +119,3 @@ body{
     padding-top: 10px;
     font-size: 1rem;
 }
-.connect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 27px;
-}
