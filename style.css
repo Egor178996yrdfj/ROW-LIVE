@@ -101,7 +101,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 68px;  
+    padding-top: 100px;
 }
 .rowcolich{
     font-size: 3rem;
@@ -118,4 +118,9 @@ body{
     text-align: center;
     padding-top: 10px;
     font-size: 1rem;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
