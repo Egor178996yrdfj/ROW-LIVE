@@ -101,7 +101,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 57px;
+    padding-top: 100px;
 }
 .rowcolich{
     font-size: 3rem;
@@ -111,7 +111,8 @@ body{
 }
 .ROWnumber1{
     padding-left: 0px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 .champrang{
     color: #848484;
@@ -124,3 +125,22 @@ body{
     justify-content: center;
     align-items: center;
 }
+.buttonprofile {
+    border: 2px solid #3A3A3A;
+    background: rgba(21, 21, 21, 80%);
+    font-size: 12px;
+    padding: 12px 12px;
+    border-radius: 7px;
+    color: #FFFFFF;
+    position: relative;
+    top: 54px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+.buttonprofile svg {
+    margin-right: 8px;
+}
+
