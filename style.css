@@ -139,6 +139,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     font-weight: 600;
+    text-decoration: none;
 }
 .buttonprofile svg {
     margin-right: 8px;
