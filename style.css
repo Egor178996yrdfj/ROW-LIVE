@@ -193,7 +193,7 @@ body{
 .buttonimg {
     display: flex;
     justify-content: space-around;
-    padding-top: 110px;
+    padding-top: 120px;
 }
 .buttonhomeimg {
     z-index: 9999;
