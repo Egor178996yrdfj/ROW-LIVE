@@ -185,7 +185,7 @@ body{
 .bottombuttons {
     position: fixed;
     bottom: 0;
-    padding-top: 100px;
+    padding-top: 95px;
     width: 100%;
     background-color: rgba(25, 25, 25, 50%);
 }
