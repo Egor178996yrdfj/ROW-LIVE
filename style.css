@@ -151,7 +151,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 256px;
+    width: 98%;
     height: 35px;
     border: 1.5px solid #3A3A3A;
     background: rgba(13, 13, 13, 80%);
@@ -161,16 +161,17 @@ body{
     color: #FFFFFF;
     position: relative;
     top: 84px;
-    left: 14px;
+    margin-right: 14px;
     display: flex;
     align-items: center;
     font-weight: 600;
     -webkit-tap-highlight-color: transparent;
     font-size: 1rem;
+    margin: 0 14px 0 14px;
 }
 .buttonjoincommunity svg {
     margin-right: 8px;
 }
 .arrowbutcom{
-    margin-left: 25px;
+    margin-left: 70px;
 }
