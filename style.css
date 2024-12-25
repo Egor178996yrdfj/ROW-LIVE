@@ -188,4 +188,23 @@ body{
     padding-top: 95px;
     width: 100%;
     background-color: rgba(25, 25, 25, 50%);
+    z-index: 0;
+}
+.bottomcontainer-buttons {
+    display: flex;
+    justify-content: space-around;
+    color: #727272;
+    padding-top: 190px;
+}
+.btnhome {
+    z-index: 9999;
+}
+.btntask {
+    z-index: 9999;
+}
+.btnfriends {
+    z-index: 9999;
+}
+.btnairdrop {
+    z-index: 9999;
 }
