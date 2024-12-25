@@ -190,25 +190,20 @@ body{
     background-color: rgba(25, 25, 25, 50%);
     z-index: 0;
 }
-.bottomcontainer-buttons {
+.buttonimg {
     display: flex;
     justify-content: space-around;
-    color: #727272;
-    padding-top: 150px;
+    padding-top: 140px;
 }
-.btnhome {
+.buttonhomeimg {
     z-index: 9999;
-    font-size: 0.6rem;
 }
-.btntask {
+.buttontaskimg {
     z-index: 9999;
-    font-size: 0.6rem;
 }
-.btnfriends {
+.buttonfriendsimg {
     z-index: 9999;
-    font-size: 0.6rem;
 }
-.btnairdrop {
+.buttonairdropimg {
     z-index: 9999;
-    font-size: 0.6rem;
 }
