@@ -198,13 +198,17 @@ body{
 }
 .btnhome {
     z-index: 9999;
+    font-size: 0.8rem;
 }
 .btntask {
     z-index: 9999;
+    font-size: 0.8rem;
 }
 .btnfriends {
     z-index: 9999;
+    font-size: 0.8rem;
 }
 .btnairdrop {
     z-index: 9999;
+    font-size: 0.8rem;
 }
