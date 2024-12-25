@@ -194,21 +194,21 @@ body{
     display: flex;
     justify-content: space-around;
     color: #727272;
-    padding-top: 170px;
+    padding-top: 165px;
 }
 .btnhome {
     z-index: 9999;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 .btntask {
     z-index: 9999;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 .btnfriends {
     z-index: 9999;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 .btnairdrop {
     z-index: 9999;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
