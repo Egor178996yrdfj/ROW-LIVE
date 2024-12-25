@@ -196,14 +196,14 @@ body{
     padding-top: 120px;
 }
 .buttonhomeimg {
-    z-index: 9999;
+    z-index: 2;
 }
 .buttontaskimg {
-    z-index: 9999;
+    z-index: 2;
 }
 .buttonfriendsimg {
-    z-index: 9999;
+    z-index: 2;
 }
 .buttonairdropimg {
-    z-index: 9999;
+    z-index: 2;
 }
