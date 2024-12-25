@@ -3,8 +3,12 @@ document.onselectstart = noselect;
 function noselect() {return false;}
 
 let tg = window.Telegram.WebApp;
-let champ = document.getElementById('champrang');
 
-champ.getElementById('click', () => {
-    tg.close();
-});
+let champrangt = document.getElementById('hedercontantconteiner');
+let accountage = document.getElementById('account_age_text').style.display = 'none';
+
+champrangt.addEventListener('click', () => {
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('account_age_text').style.display = 'block'
+})
+
