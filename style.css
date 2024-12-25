@@ -207,3 +207,10 @@ body{
 .buttonairdropimg {
     z-index: 2;
 }
+.accountage b {
+    color: #ffffff;
+}
+.accountage {
+    color: #939393;
+    text-align: center;
+}
