@@ -204,26 +204,26 @@ body{
     z-index: 2;
     position: fixed;
     bottom: 3%;
-    left: 10%;
+    left: 6%;
 }
 .buttontaskimg {
     z-index: 2;
     position: fixed;
     bottom: 3%;
-    left: 31%;
+    left: 28%;
 }
 .buttonfriendsimg {
     z-index: 2;
     position: fixed;
     bottom: 3%;
-    left: 52%;
+    left: 51%;
 }
 .buttonairdropimg {
     z-index: 2;
     position: fixed;
     bottom: 3%;
     left: 76%;
-    right: 10%;
+    right: 5%;
 }
 .accountage b {
     color: #ffffff;
