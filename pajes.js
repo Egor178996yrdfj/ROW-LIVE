@@ -4,7 +4,7 @@ function noselect() {return false;}
 
 let tg = window.Telegram.WebApp;
 
-let champrangt = document.getElementById('hedercontantconteiner');
+let champrangt = document.getElementById('heder_acc_age');
 let accountage = document.getElementById('account_age').style.display = 'none';
 let buttonbackage_btn = document.getElementById('buttonbackage_btn');
 
