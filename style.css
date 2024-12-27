@@ -160,11 +160,9 @@ body{
     color: #FFFFFF;
     position: relative;
     top: 84px;
-    margin-right: 14px;
     display: flex;
     align-items: center;
     font-weight: 600;
-    -webkit-tap-highlight-color: transparent;
     font-size: 1rem;
     margin: 0 14px 0 14px;
 }
@@ -177,7 +175,7 @@ body{
 .bottombuttons {
     position: fixed;
     bottom: 0;
-    padding-top: 95px;
+    padding-top: 6.7%;
     width: 100%;
     background-color: rgba(25, 25, 25, 50%);
     z-index: 0;
@@ -185,7 +183,7 @@ body{
 .buttonimg {
     display: flex;
     justify-content: space-around;
-    padding-top: 110px;
+    padding-top: 9%;
 }
 .buttonhomeimg {
     z-index: 2;
@@ -240,5 +238,5 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 230px;
+    padding-top: 16%;
 }
