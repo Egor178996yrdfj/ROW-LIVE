@@ -92,10 +92,29 @@ body{
     background-size: 100%;
 }
 .header-container{
-    display: flex;
-    color: #FFFFFF;
-    font-size: 1;
-    font-style: normal;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(25, 25, 25, 50%);
+    padding-top: 0px;
+}
+.age_middle_heder_text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    z-index: 3;
+    margin-right: 40%;
+}
+.line_under_heder {
+    margin-right: 87%;
+    width: 3px;
+    height: 5%;
+    background-color: #529DD6;
+    z-index: 4;
+    position: fixed;
+    top: 2.1%;
+}
+.min_heder_main_btn {
+    padding-top: 2.5px;
 }
 .logoup{
     display: flex;
@@ -134,8 +153,8 @@ body{
     padding: 24px 13px;
     border-radius: 8px;
     color: #FFFFFF;
-    position: relative;
-    top: 74px;
+    position: fixed;
+    top: 67%;
     left: 14px;
     display: flex;
     align-items: center;
@@ -158,8 +177,8 @@ body{
     padding: 24px 13px;
     border-radius: 8px;
     color: #FFFFFF;
-    position: relative;
-    top: 84px;
+    position: fixed;
+    top: 76%;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -175,27 +194,36 @@ body{
 .bottombuttons {
     position: fixed;
     bottom: 0;
-    padding-top: 6.7%;
+    height: 13%;
+    padding-bottom: 0px;
     width: 100%;
     background-color: rgba(25, 25, 25, 50%);
     z-index: 0;
 }
-.buttonimg {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 9%;
-}
 .buttonhomeimg {
     z-index: 2;
+    position: fixed;
+    bottom: 3%;
+    left: 10%;
 }
 .buttontaskimg {
     z-index: 2;
+    position: fixed;
+    bottom: 3%;
+    left: 31%;
 }
 .buttonfriendsimg {
     z-index: 2;
+    position: fixed;
+    bottom: 3%;
+    left: 52%;
 }
 .buttonairdropimg {
     z-index: 2;
+    position: fixed;
+    bottom: 3%;
+    left: 76%;
+    right: 10%;
 }
 .accountage b {
     color: #ffffff;
@@ -211,7 +239,6 @@ body{
     height: 60px;
     background-color: rgba(25, 25, 25, 50%);
     padding-top: 0px;
-    display: flex;
     justify-content: center;
 }
 .age_top_text {
@@ -235,8 +262,6 @@ body{
     top: 45px;
 }
 .buttonbackage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 16%;
+    text-align: center;
+    padding-top: 140px;
 }
