@@ -18,3 +18,13 @@ buttonbackage_btn.addEventListener('click', () => {
     document.getElementById('account_age').style.display = 'none';
 })
 
+var id = setInterval(score, 1000);
+
+var rowscore = 0;
+
+var score = document.getElementById('rowscore');
+
+setInterval(function() {
+    rowscore ++;
+    score.innerHTML=(rowscore);
+}, 1000);
