@@ -18,9 +18,21 @@ buttonbackage_btn.addEventListener('click', () => {
     document.getElementById('account_age').style.display = 'none';
 })
 
+let daily_claim_btn = document.getElementById('daily_claim_btn_img');
+let id_dark_back = document.getElementById('id_dark_back');
+
+daily_claim_btn.addEventListener('click', () => {
+    document.getElementById('daily_reward').style.display = 'none';
+})
+
+id_dark_back.addEventListener('click', () => {
+    document.getElementById('daily_reward').style.display = 'none';
+})
+
+
 var id = setInterval(score, 1000);
 
-var rowscore = 0;
+var rowscore = 1075;
 
 var score = document.getElementById('rowscore');
 
