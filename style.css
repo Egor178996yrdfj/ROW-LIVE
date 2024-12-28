@@ -138,6 +138,7 @@ body{
     text-align: center;
     padding-top: 10px;
     font-size: 1rem;
+    -webkit-tap-highlight-color: transparent;
 }
 .header-container{
     display: flex;
@@ -184,6 +185,7 @@ body{
     font-weight: 600;
     font-size: 1rem;
     margin: 0 14px 0 14px;
+    -webkit-tap-highlight-color: transparent;
 }
 .buttonjoincommunity svg {
     margin-right: 8px;
@@ -261,7 +263,60 @@ body{
     position: fixed;
     top: 45px;
 }
-.buttonbackage{
+.buttonbackage {
     text-align: center;
     padding-top: 140px;
+}
+.award_backing {
+    position: fixed;
+    width: 84%;
+    left: 7.8%;
+    top: 15.6%;
+    z-index: 7;
+}
+.dark_back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+    z-index: 6;
+    top: 0px;
+}
+.daily_claim_btn {
+    position: fixed;
+    width: 72%;
+    z-index: 8;
+    left: 13.5%;
+    top: 66.7%;
+}
+.day_number_class {
+    font-size: 8rem;
+    font-weight: 600;
+    padding-top: 3.5px;
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 8;
+    top: 18%;
+    left: 38%;
+}
+.days_text_class {
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding-top: 3.5px;
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 8;
+    top: 47%;
+    left: 21%;
+}
+.rowdayly-text_class {
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding-top: 3.5px;
+    color: #FFFFFF;
+    position: fixed;
+    top: 55%;
+    left: 29%;
+transform: translate (-50%, -50%);
+    z-index: 8;
 }
