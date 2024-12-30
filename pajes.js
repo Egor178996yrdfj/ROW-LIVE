@@ -86,4 +86,4 @@ daily_claim_btn.addEventListener('click', dayly_reward_con);
 
 setInterval(function() {
     document.getElementById('daily_reward').style.display = 'block';
-}, 10000);
+}, 5000);
