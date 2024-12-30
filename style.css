@@ -318,7 +318,7 @@ body{
     text-align: center;
     display: block
 }
-.rowdayly-text_class {
+.rowdayly_text_class {
     font-size: 1.9rem;
     font-weight: 600;
     padding-top: 3.5px;
@@ -331,4 +331,3 @@ body{
     z-index: 8;
     display: block
 }
-
