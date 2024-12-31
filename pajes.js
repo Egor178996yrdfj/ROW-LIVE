@@ -52,6 +52,15 @@ id_dark_back.addEventListener('click', () => {
 var day_numberNumb = 0;
 day_number.innerHTML = day_numberNumb;
 
+var heventPressed = setInterval(function() {
+    var heventPressedDate = new Date();
+    day_numberNumb.innerHTML = (heventPressedDate.getHours());
+}, 60000);
+
+if (day_numberNumb == "0") {
+    day_numberNumb == 0;
+}
+
 rowdayly_text_id.innerHTML = ("+" + DayNumb0 + "ROW");
 score.innerHTML = '0';
 
@@ -83,7 +92,8 @@ const dayly_reward_con = () => {
 };
 
 daily_claim_btn.addEventListener('click', dayly_reward_con);
+id_dark_back.addEventListener('click', dayly_reward_con);
 
 setInterval(function() {
     document.getElementById('daily_reward').style.display = 'block';
-}, 5000);
+}, 10000);
