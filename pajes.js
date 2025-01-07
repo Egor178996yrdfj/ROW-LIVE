@@ -96,4 +96,53 @@ id_dark_back.addEventListener('click', dayly_reward_con);
 
 setInterval(function() {
     document.getElementById('daily_reward').style.display = 'block';
-}, 10000);
+}, 60000);
+
+// task
+
+let TaskBtnMain = document.getElementById('TaskBtnMain');
+let HomeBtnGray = document.getElementById('HomeBtnGray').style.display = 'none';
+let taskMain = document.getElementById('taskMain').style.display = 'none';
+let TaskBtnTask = document.getElementById('TaskBtnTask').style.display = 'none';
+let mainmenu = document.getElementById('mainmenu').style.display = 'block';
+
+let topTaskText = document.getElementById('topTaskText').style.display = 'none';    //top text on task
+
+let HomeBtnID = document.getElementById('HomeBtnID');
+
+
+TaskBtnMain.addEventListener('click', () => {
+    document.getElementById('mainmenu').style.display = 'none';
+    document.getElementById('topTaskText').style.display = 'block';
+    document.getElementById('HomeBtnID').style.display = 'none';
+    document.getElementById('HomeBtnGray').style.display = 'block';
+    document.getElementById('taskMain').style.display = 'block';
+    document.getElementById('TaskBtnTask').style.display = 'block';
+    document.getElementById('TaskBtnMain').style.display = 'none';
+});
+
+window.onload = function() {
+    const HomeBtnGray = document.getElementById('HomeBtnGray');
+
+    if (HomeBtnGray) {
+        HomeBtnGray.addEventListener('click', () => {
+            document.getElementById('mainmenu').style.display = 'block';
+            document.getElementById('taskMain').style.display = 'none';
+            HomeBtnGray.style.display = 'none';
+            document.getElementById('HomeBtnID').style.display = 'block';
+            document.getElementById('TaskBtnTask').style.display = 'none';
+            document.getElementById('TaskBtnMain').style.display = 'block';
+        });
+    } else {
+        console.error('Элемент HomeBtnGray не найден на странице.');
+    }
+};
+
+// completed task1
+
+let BtnOverTask1 = document.getElementById('BtnOverTask1');
+
+BtnOverTask1.addEventListener('click', () => {
+    BtnOverTask1.style.display = 'none';
+    rowscore += 20
+});
