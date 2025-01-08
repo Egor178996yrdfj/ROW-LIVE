@@ -269,9 +269,17 @@ body{
     right: 0px;
     display: block;
     text-align: center;
-    bottom: 8.5%;
+    bottom: 7%;
 }
 
+.rowLogoOnDaily{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    display: block;
+    text-align: center;
+    bottom: 21%;
+}
 .PaddleOnDayli {
     position: fixed;
     display: block;
