@@ -18,13 +18,13 @@ buttonbackage_btn.addEventListener('click', () => {
     document.getElementById('account_age').style.display = 'none';
 })
 
-
 var rowscore = 0;
 
 var score = document.getElementById('rowscore');
 
-
 //daily reward
+
+document.getElementById('main').style.display = 'none';
 
 var DayNumb0 = 400;
 var DayNumb1 = 520;
@@ -39,15 +39,12 @@ var rowdayly_text_id = document.getElementById('rowdayly_text_id');
 //receiving an award
 
 let daily_claim_btn = document.getElementById('daily_claim_btn_img');
-let id_dark_back = document.getElementById('id_dark_back');
 
 daily_claim_btn.addEventListener('click', () => {
     document.getElementById('daily_reward').style.display = 'none';
+    document.getElementById('main').style.display = 'block';
 })
 
-id_dark_back.addEventListener('click', () => {
-    document.getElementById('daily_reward').style.display = 'none';
-})
 
 var day_numberNumb = 0;
 day_number.innerHTML = day_numberNumb;
@@ -92,13 +89,17 @@ const dayly_reward_con = () => {
 };
 
 daily_claim_btn.addEventListener('click', dayly_reward_con);
-id_dark_back.addEventListener('click', dayly_reward_con);
 
 setInterval(function() {
     document.getElementById('daily_reward').style.display = 'block';
-}, 60000);
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('account_age').style.display = 'none';
+    document.getElementById('taskMain').style.display = 'none';
+}, 1200000);
 
 // task
+
+let NoQuestsID1 = document.getElementById('NoQuestsID1').style.display = 'none';
 
 let TaskBtnMain = document.getElementById('TaskBtnMain');
 let HomeBtnGray = document.getElementById('HomeBtnGray').style.display = 'none';
@@ -142,7 +143,23 @@ window.onload = function() {
 
 let BtnOverTask1 = document.getElementById('BtnOverTask1');
 
+let SpecTaskText = document.querySelector('.SpecTaskText');
+let TaskBlockStart2 = document.querySelector('.TaskBlockStart2');
+let SponsorTaskLogoClass2 = document.querySelector('.SponsorTaskLogoClass2');
+let TaskToBtn2 = document.querySelector('.TaskToBtn2');
+let arrowTaskBtn2 = document.querySelector('.arrowTaskBtn2');
+let QuantityAddRow2 = document.querySelector('.QuantityAddRow2');
+
+
 BtnOverTask1.addEventListener('click', () => {
     BtnOverTask1.style.display = 'none';
-    rowscore += 20
+    score.innerHTML = (rowscore += 20);
+    document.getElementById('NoQuestsID1').style.display = 'block';
+    SpecTaskText.style.top = '27%';
+    TaskBlockStart2.style.top = '31.5%';
+    SponsorTaskLogoClass2.style.top = '32%';
+    TaskToBtn2.style.top = '34%';
+    arrowTaskBtn2.style.top = '31.5%';
+    QuantityAddRow2.style.top = '37.8%';
 });
+
