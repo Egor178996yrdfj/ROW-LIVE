@@ -120,6 +120,8 @@ TaskBtnMain.addEventListener('click', () => {
     document.getElementById('taskMain').style.display = 'block';
     document.getElementById('TaskBtnTask').style.display = 'block';
     document.getElementById('TaskBtnMain').style.display = 'none';
+    document.querySelector('.buttontaskimg').style.bottom = '3.6%';
+    document.querySelector('.buttonhomeimg').style.bottom = '3.6%';
 });
 
 window.onload = function() {
@@ -162,4 +164,3 @@ BtnOverTask1.addEventListener('click', () => {
     arrowTaskBtn2.style.top = '31.5%';
     QuantityAddRow2.style.top = '37.8%';
 });
-
