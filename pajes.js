@@ -164,3 +164,9 @@ BtnOverTask1.addEventListener('click', () => {
     arrowTaskBtn2.style.top = '31.5%';
     QuantityAddRow2.style.top = '37.8%';
 });
+
+let test = document.getElementById('test');
+
+test.addEventListener('click', () => {
+    test.innerHTML = tg.initDataUnsafe.first_name;
+});
