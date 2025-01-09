@@ -168,5 +168,5 @@ BtnOverTask1.addEventListener('click', () => {
 let test = document.getElementById('test');
 
 test.addEventListener('click', () => {
-    test.innerHTML = tg.initDataUnsafe.user.date;
+    test.innerHTML = tg.initDataUnsafe.user.registered;
 });
