@@ -278,7 +278,8 @@ body{
     right: 0px;
     display: block;
     text-align: center;
-    bottom: 21%;
+    bottom: 22%;
+    z-index: 2;
 }
 .PaddleOnDayli {
     position: fixed;
@@ -315,7 +316,7 @@ body{
     color: #FFFFFF;
     position: fixed;
     z-index: 8;
-    top: 39%;
+    top: 37%;
     left: 0px;
     right: 0px;
     text-align: center;
@@ -327,12 +328,17 @@ body{
     padding-top: 3.5px;
     color: #FFFFFF;
     position: fixed;
-    top: 47%;
+    top: 44%;
     left: 0px;
     right: 0px;
     text-align: center;
     z-index: 8;
     display: block
+}
+.paddleOnDaily {
+    position: fixed;
+    right: 0px;
+    top: 32.5%
 }
 .TaskBlockTop {
     display: flex;
@@ -511,4 +517,18 @@ body{
     right: 0px;
     text-align: center;
     display: block;
+}
+.lineLoad1 {
+    position: fixed;
+    width:60%;
+    height:3px;
+    bottom: 43.7%;
+    left: 20%;
+    right: 20%;
+    background:linear-gradient(white 0 0) center/0% 100% no-repeat;
+    animation:l 2s linear infinite alternate;
+}
+
+@keyframes l {
+  to {background-size:100% 100%}
 }
