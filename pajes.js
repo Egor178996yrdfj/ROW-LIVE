@@ -95,7 +95,7 @@ setInterval(function() {
     document.getElementById('main').style.display = 'none';
     document.getElementById('account_age').style.display = 'none';
     document.getElementById('taskMain').style.display = 'none';
-}, 1200000);
+}, 120000);
 
 // task
 
@@ -169,4 +169,8 @@ let test = document.getElementById('test');
 
 test.addEventListener('click', () => {
     test.innerHTML = tg.initDataUnsafe.user.username;
+});
+
+window.addEventListener('load', () => {
+  alert('Страница загружена!');
 });
