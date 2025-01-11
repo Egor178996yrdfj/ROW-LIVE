@@ -264,6 +264,17 @@ body{
     font-size: 1.5rem;
     font-weight: 400;
 }
+.usernameonAgeReward {
+    position: fixed;
+    color: #ffffff;
+    left: 0px;
+    right: 0px;
+    display: block;
+    text-align: center;
+    top: 28%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 .line_under_text {
     display: flex;
     justify-content: center;
