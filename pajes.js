@@ -176,12 +176,21 @@ window.addEventListener('load', () => {
 //age reward disribution
 
 let usernameonAgeID = document.getElementById('usernameonAgeID');
+let usernameonAgeRewardID = document.getElementById('usernameonAgeRewardID');
 
-usernameonAgeID.innerHTML = (tg.initDataUnsafe.user.username);
-
-if (usernameonAgeID == undefined) {
+if (usernameonAgeID == ('username')) {
     document.getElementById('main').style.display = 'block';
     document.getElementById('account_age').style.display = 'none';
 } else if (usernameonAgeID != undefined) {
     usernameonAgeID.innerHTML = "@" + (tg.initDataUnsafe.user.username);
+};
+
+function getRandomInRange (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
+
+if (usernameonAgeID.length() <= 8) {
+    var randomBiggerReward = getRandomInRange (1000, 2000)
+    usernameonAgeRewardID.innerHTML = ("+" + randomBiggerReward + " ROW");
+    score.innerHTML = (rowscore += randomBiggerReward);
 };
