@@ -189,7 +189,7 @@ function getRandomInRange (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
-if (usernameonAgeID.length() <= 8) {
+if (usernameonAgeID.length() <= 9) {
     var randomBiggerReward = getRandomInRange (1000, 2000)
     usernameonAgeRewardID.innerHTML = ("+" + randomBiggerReward + " ROW");
     score.innerHTML = (rowscore += randomBiggerReward);
