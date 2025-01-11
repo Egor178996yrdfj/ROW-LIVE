@@ -230,11 +230,7 @@ body{
 .accountage b {
     color: #ffffff;
 }
-.accountage {
-    color: #939393;
-    text-align: center;
-    font-size: 1.35rem;
-}
+
 .age_top_panel {
     display: flex;
     width: 100%;
@@ -255,14 +251,14 @@ body{
 }
 .usernameonAge {
     position: fixed;
-    color: #ffffff;
+    color: #939393;
     left: 0px;
     right: 0px;
     display: block;
     text-align: center;
-    top: 22.3%;
+    top: 46%;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 .usernameonAgeReward {
     position: fixed;
@@ -271,7 +267,7 @@ body{
     right: 0px;
     display: block;
     text-align: center;
-    top: 28%;
+    top: 52%;
     font-size: 1.5rem;
     font-weight: 400;
 }
