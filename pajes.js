@@ -177,7 +177,7 @@ window.addEventListener('load', () => {
 
 let usernameonAgeID = document.getElementById('usernameonAgeID');
 
-usernameonAgeID = tg.initDataUnsafe.user.username;
+usernameonAgeID.innerHTML = tg.initDataUnsafe.user.username;
 
 if (usernameonAgeID == undefined) {
     document.getElementById('main').style.display = 'block';
