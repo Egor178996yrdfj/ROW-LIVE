@@ -185,5 +185,5 @@ if (usernameonAgeID == ('username')) {
     usernameonAgeID.innerHTML = "@" + (tg.initDataUnsafe.user.username);
 };
 
-usernameonAgeRewardID.innerHTML = (usernameonAgeID.length());
+usernameonAgeRewardID.innerHTML = (usernameonAgeID.length);
 
