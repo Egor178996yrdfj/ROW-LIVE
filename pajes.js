@@ -165,12 +165,23 @@ BtnOverTask1.addEventListener('click', () => {
     QuantityAddRow2.style.top = '37.8%';
 });
 
-let test = document.getElementById('test');
+//loading
 
-test.addEventListener('click', () => {
-    test.innerHTML = tg.initDataUnsafe.user.username;
-});
+let loader_hide = document.getElementById('loader_hide');
 
 window.addEventListener('load', () => {
-  alert('Страница загружена!');
+  loader_hide.style.display = 'none';
 });
+
+//age reward disribution
+
+let usernameonAgeID = document.getElementById('usernameonAgeID');
+
+usernameonAgeID = tg.initDataUnsafe.user.username;
+
+if (usernameonAgeID == undefined) {
+    document.getElementById('main').style.display = 'block';
+    document.getElementById('account_age').style.display = 'none';
+} else if (usernameonAgeID != undefined) {
+    usernameonAgeID.innerHTML = "@" + tg.initDataUnsafe.user.username;
+};
