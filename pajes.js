@@ -178,12 +178,9 @@ window.addEventListener('load', () => {
 let usernameonAgeID = document.getElementById('usernameonAgeID');
 let usernameonAgeRewardID = document.getElementById('usernameonAgeRewardID');
 
-if (usernameonAgeID == ('username')) {
-    document.getElementById('main').style.display = 'block';
-    document.getElementById('account_age').style.display = 'none';
-} else if (usernameonAgeID != undefined) {
-    usernameonAgeID.innerHTML = "@" + (tg.initDataUnsafe.user.username);
-};
+usernameonAgeID.innerHTML = (tg.initDataUnsafe.user.first_name);
 
-usernameonAgeRewardID.innerHTML = (usernameonAgeID.length);
+var RewardDate = new Date(getHours() );
 
+
+usernameonAgeRewardID.innerHTML = (RewardDate);
