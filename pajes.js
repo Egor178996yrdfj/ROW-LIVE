@@ -185,12 +185,5 @@ if (usernameonAgeID == ('username')) {
     usernameonAgeID.innerHTML = "@" + (tg.initDataUnsafe.user.username);
 };
 
-function getRandomInRange (min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-};
+usernameonAgeRewardID.innerHTML = (usernameonAgeID.length());
 
-if (usernameonAgeID.length() <= 9) {
-    var randomBiggerReward = getRandomInRange (1000, 2000)
-    usernameonAgeRewardID.innerHTML = ("+" + randomBiggerReward + " ROW");
-    score.innerHTML = (rowscore += randomBiggerReward);
-};
