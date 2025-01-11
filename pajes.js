@@ -183,5 +183,5 @@ if (usernameonAgeID == undefined) {
     document.getElementById('main').style.display = 'block';
     document.getElementById('account_age').style.display = 'none';
 } else if (usernameonAgeID != undefined) {
-    usernameonAgeID.innerHTML = "@" + tg.initDataUnsafe.user.username;
+    usernameonAgeID.innerHTML = tg.initDataUnsafe.user.username;
 };
