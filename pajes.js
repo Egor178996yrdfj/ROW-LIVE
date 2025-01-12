@@ -195,14 +195,6 @@ const ageReward = () => {
         ageRewardVar = score.innerHTML = (rowscore += readyResultRewardAge);
         isAgeRewardAssigned = true; 
     }
-
-    
-    if (RewardDateSecond < 5) {
-        readyResultRewardAge = RewardDateSecond * 60;
-    } else if (RewardDateSecond >= 5) {
-        readyResultRewardAge = RewardDateSecond * 25;
-    }
-
     usernameonAgeRewardID.innerHTML = readyResultRewardAge;
 };
 
