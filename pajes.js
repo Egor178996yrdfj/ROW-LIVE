@@ -178,9 +178,42 @@ window.addEventListener('load', () => {
 
 let usernameonAgeID = document.getElementById('usernameonAgeID');
 let usernameonAgeRewardID = document.getElementById('usernameonAgeRewardID');
-var random = document.getElementById('random');
-
-usernameonAgeID.innerHTML = (tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name);
 
 var RewardDate = new Date();
+var RewardDateSecond = RewardDate.getSeconds();
 
+var readyResultRewardAge = RewardDateSecond * 25;
+
+var ageRewardVar = 0;
+var counterAgeRewards = 0;
+var isAgeRewardAssigned = false;
+
+const ageReward = () => {
+    counterAgeRewards++;
+
+    if (!isAgeRewardAssigned) {
+        ageRewardVar = score.innerHTML = (rowscore += readyResultRewardAge);
+        isAgeRewardAssigned = true; 
+    }
+
+    
+    if (RewardDateSecond < 5) {
+        readyResultRewardAge = RewardDateSecond * 60;
+    } else if (RewardDateSecond >= 5) {
+        readyResultRewardAge = RewardDateSecond * 25;
+    }
+
+    usernameonAgeRewardID.innerHTML = readyResultRewardAge;
+};
+
+
+buttonbackage_btn.addEventListener('click', ageReward);
+
+
+if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) {
+    usernameonAgeID.innerHTML = `${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}`;
+} else {
+    usernameonAgeID.innerHTML = "Пользователь не найден";
+}
+
+usernameonAgeRewardID.innerHTML = readyResultRewardAge;
