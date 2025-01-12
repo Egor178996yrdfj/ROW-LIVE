@@ -1,3 +1,4 @@
+
 document.ondragstart = noselect;
 document.onselectstart = noselect;
 function noselect() {return false;}
@@ -177,10 +178,9 @@ window.addEventListener('load', () => {
 
 let usernameonAgeID = document.getElementById('usernameonAgeID');
 let usernameonAgeRewardID = document.getElementById('usernameonAgeRewardID');
+var random = document.getElementById('random');
 
-usernameonAgeID.innerHTML = (tg.initDataUnsafe.user.first_name);
+usernameonAgeID.innerHTML = (tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name);
 
-var RewardDate = new Date(getHours() );
+var RewardDate = new Date();
 
-
-usernameonAgeRewardID.innerHTML = (RewardDate);
