@@ -211,4 +211,4 @@ if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) {
 usernameonAgeRewardID.innerHTML = readyResultRewardAge;
 
 //hat web app
-tg.setHeaderColor("#ffffff");
+tg.setHeaderColor("#464646");
