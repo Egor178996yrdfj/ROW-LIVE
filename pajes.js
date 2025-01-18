@@ -1,4 +1,3 @@
-
 document.ondragstart = noselect;
 document.onselectstart = noselect;
 function noselect() {return false;}
@@ -179,23 +178,24 @@ window.addEventListener('load', () => {
 let usernameonAgeID = document.getElementById('usernameonAgeID');
 let usernameonAgeRewardID = document.getElementById('usernameonAgeRewardID');
 
-var RewardDate = new Date();
-var RewardDateSecond = RewardDate.getSeconds();
-
-var readyResultRewardAge = RewardDateSecond * 25;
-
 var ageRewardVar = 0;
 var counterAgeRewards = 0;
 var isAgeRewardAssigned = false;
+
+function getRandomInRange (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+var randomNumbRewDay = getRandomInRange (1500, 2000)
 
 const ageReward = () => {
     counterAgeRewards++;
 
     if (!isAgeRewardAssigned) {
-        ageRewardVar = score.innerHTML = (rowscore += readyResultRewardAge);
+        ageRewardVar = score.innerHTML = (rowscore += randomNumbRewDay);
         isAgeRewardAssigned = true; 
     }
-    usernameonAgeRewardID.innerHTML = readyResultRewardAge;
+    usernameonAgeRewardID.innerHTML = randomNumbRewDay;
 };
 
 
@@ -208,7 +208,7 @@ if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) {
     usernameonAgeID.innerHTML = "Пользователь не найден";
 }
 
-usernameonAgeRewardID.innerHTML = readyResultRewardAge;
+usernameonAgeRewardID.innerHTML = randomNumbRewDay;
 
 //hat web app
 tg.setHeaderColor("#0d0d0d");
