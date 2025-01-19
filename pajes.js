@@ -9,11 +9,13 @@ let accountage = document.getElementById('account_age').style.display = 'none';
 let buttonbackage_btn = document.getElementById('buttonbackage_btn');
 
 champrangt.addEventListener('click', () => {
+    fadeIn(overlay, 20);
     document.getElementById('main').style.display = 'none';
     document.getElementById('account_age').style.display = 'block';
 })
 
 buttonbackage_btn.addEventListener('click', () => {
+    fadeIn(overlay, 20);
     document.getElementById('main').style.display = 'block';
     document.getElementById('account_age').style.display = 'none';
 })
@@ -41,6 +43,7 @@ var rowdayly_text_id = document.getElementById('rowdayly_text_id');
 let daily_claim_btn = document.getElementById('daily_claim_btn_img');
 
 daily_claim_btn.addEventListener('click', () => {
+    fadeIn(overlay, 20);
     document.getElementById('daily_reward').style.display = 'none';
     document.getElementById('main').style.display = 'block';
 })
@@ -113,6 +116,7 @@ let HomeBtnID = document.getElementById('HomeBtnID');
 
 
 TaskBtnMain.addEventListener('click', () => {
+    fadeIn(overlay, 20);
     document.getElementById('mainmenu').style.display = 'none';
     document.getElementById('topTaskText').style.display = 'block';
     document.getElementById('HomeBtnID').style.display = 'none';
@@ -120,8 +124,12 @@ TaskBtnMain.addEventListener('click', () => {
     document.getElementById('taskMain').style.display = 'block';
     document.getElementById('TaskBtnTask').style.display = 'block';
     document.getElementById('TaskBtnMain').style.display = 'none';
-    document.querySelector('.buttontaskimg').style.bottom = '3.6%';
-    document.querySelector('.buttonhomeimg').style.bottom = '3.6%';
+    document.querySelector('.buttontaskimg').style.bottom = '3.5%';
+    document.querySelector('.buttonhomeimg').style.bottom = '3.5%';
+    FriendGrayBtn.style.display = 'block';
+    document.querySelector('.buttonfriendsimg').style.bottom = '3.5%';
+    document.getElementById('FriendBlueBtn').style.display = 'none';
+    document.getElementById('FriendsMain').style.display = 'none'; 
 });
 
 window.onload = function() {
@@ -129,12 +137,17 @@ window.onload = function() {
 
     if (HomeBtnGray) {
         HomeBtnGray.addEventListener('click', () => {
+            fadeIn(overlay, 20);
             document.getElementById('mainmenu').style.display = 'block';
             document.getElementById('taskMain').style.display = 'none';
             HomeBtnGray.style.display = 'none';
             document.getElementById('HomeBtnID').style.display = 'block';
             document.getElementById('TaskBtnTask').style.display = 'none';
             document.getElementById('TaskBtnMain').style.display = 'block';
+            FriendGrayBtn.style.display = 'block';
+            document.querySelector('.buttonfriendsimg').style.bottom = '3.5%';
+            document.getElementById('FriendBlueBtn').style.display = 'none';
+            document.getElementById('FriendsMain').style.display = 'none';
         });
     } else {
         console.error('Элемент HomeBtnGray не найден на странице.');
@@ -211,4 +224,76 @@ if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) {
 usernameonAgeRewardID.innerHTML = randomNumbRewDay;
 
 //hat web app
+
 tg.setHeaderColor("#0d0d0d");
+
+//Friends main
+
+let FriendsMain = document.getElementById('FriendsMain').style.display = 'none';
+var FriendBlueBtn = document.getElementById('FriendBlueBtn').style.display = 'none';
+var FriendGrayBtn = document.getElementById('FriendGrayBtn');
+
+FriendGrayBtn.addEventListener('click', () => {
+    fadeIn(overlay, 20);
+
+    FriendGrayBtn.style.display = 'none';
+    document.getElementById('FriendBlueBtn').style.display = 'block';
+    document.querySelector('.buttonfriendsimg').style.bottom = '3.5%';
+    document.getElementById('FriendsMain').style.display = 'block';
+    document.getElementById('mainmenu').style.display = 'none';
+    document.getElementById('taskMain').style.display = 'none';
+
+    document.getElementById('TaskBtnTask').style.display = 'none';
+    TaskBtnMain.style.display = 'block';
+    document.querySelector('.buttontaskimg').style.bottom = '3.5%';
+    
+    document.getElementById('HomeBtnGray').style.display = 'block';
+    document.getElementById('HomeBtnID').style.display = 'none';
+    document.querySelector('.buttonhomeimg').style.bottom = '3.5%';
+});
+
+// screen dimming
+
+var btn = document.querySelector('.btn');
+var overlay = document.querySelector('.overlay');
+
+function fadeIn(el, duration) {
+    el.style.display = 'block';
+    el.style.opacity = 0;
+
+    var start = performance.now();
+
+    function animate(time) {
+        var elapsed = time - start;
+        var progress = Math.min(elapsed / duration, 1);
+        el.style.opacity = progress;
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        } else {
+            setTimeout(function() {
+                fadeOut(el, duration);
+            }, 100); 
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
+
+function fadeOut(el, duration) {
+    var start = performance.now();
+
+    function animate(time) {
+        var elapsed = time - start;
+        var progress = Math.min(elapsed / duration, 1);
+        el.style.opacity = 1 - progress; 
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        } else {
+            el.style.display = 'none'; 
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
