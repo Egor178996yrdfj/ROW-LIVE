@@ -246,3 +246,18 @@ FriendGrayBtn.addEventListener('click', () => {
     document.querySelector('.buttonhomeimg').style.bottom = '3.5%';
 });
 
+//Friend invite
+
+var InvieButtonFriendID = document.getElementById('InvieButtonFriendID');
+let InviteMenuFriend = document.getElementById('InviteMenuFriend').style.display = 'none';
+
+InvieButtonFriendID.addEventListener('click', () => {
+    document.getElementById('InviteMenuFriend').style.display = 'block';
+});
+
+let CrossFriendBtnID =document.getElementById('CrossFriendBtnID');
+
+CrossFriendBtnID.addEventListener('click', () => {
+    document.getElementById('InviteMenuFriend').style.display = 'none';
+});
+
