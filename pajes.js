@@ -272,25 +272,10 @@ BlackDisblayFriend.addEventListener('click', () => {
 var AddFriendCopyLinkBtn = document.querySelector('.AddFriendCopyLinkBtn');
 
 function shareMessage() {
-    const message = 'Ваше сообщение для отправки'; 
-    const url = 'https://example.com'; 
-
-    if (navigator.share) {
-        navigator.share({
-            title: 'Заголовок сообщения',
-            text: message,
-            url: url
-        })
-        .then(() => {
-            console.log('Сообщение успешно отправлено');
-        })
-        .catch((error) => {
-            console.error('Ошибка при отправке сообщения:', error);
-        });
-    } else {
-        console.log('API Share не поддерживается в этом браузере.');
-    }
+    const message = 'Привет, это тест!';
+    window.Telegram.WebApp.initDataUnsafe.shareMessage(message);
 }
 
-
 AddFriendCopyLinkBtn.addEventListener('click', shareMessage);
+
+
