@@ -679,7 +679,7 @@ body{
 .InvieButtonFriend p {
     position: fixed;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     width: 88%;
     height: 6.6%;
     left: 6%;
@@ -715,7 +715,7 @@ body{
     bottom: 18.2%;
     left: 8%;
     font-size: 1.1rem;
-    font-weight: 520;
+    font-weight: 500;
     z-index: 52;
 }
 .CrossFriendBtn {
