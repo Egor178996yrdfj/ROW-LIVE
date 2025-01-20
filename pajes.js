@@ -272,8 +272,8 @@ BlackDisblayFriend.addEventListener('click', () => {
 var AddFriendCopyLinkBtn = document.querySelector('.AddFriendCopyLinkBtn');
 
 function shareMessage() {
-    const message = 'Привет, это тест!';
-    window.Telegram.WebApp.initDataUnsafe.shareMessage(message);
+    const messagetest9 = 'Привет, это тест!';
+    tg.initDataUnsafe.shareMessage(messagetest9);
 }
 
 AddFriendCopyLinkBtn.addEventListener('click', shareMessage);
