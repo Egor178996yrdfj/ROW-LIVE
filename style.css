@@ -398,7 +398,7 @@ body{
 .top2TextText {
     position: fixed;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     z-index: 2;
     top: 9.2%;
     left: 6.2%;
@@ -585,7 +585,7 @@ body{
 .HederFriendText2 {
     position: fixed;
     font-size: 0.97rem;
-    font-weight: 400;
+    font-weight: 500;
     z-index: 2;
     top: 9.1%;
     left: 0px;
@@ -678,13 +678,13 @@ body{
 }
 .InvieButtonFriend p {
     position: fixed;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     width: 88%;
     height: 6.6%;
     left: 6%;
     right: 6%;
-    top: 78.5%;
+    top: 78.4%;
     color: #FFFFFF;
     text-align: center;
     align-items:center;
@@ -724,4 +724,47 @@ body{
     right: 8%;
     z-index: 52;
 }
-
+.AddFriendSentMessageBtn {
+    position: fixed;
+    width: 43%;
+    height: 8%;
+    border-radius: 7px;
+    border: 2px solid #3A3A3A;
+    z-index: 52;
+    bottom: 7.9%;
+    left: 4.4%;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+.AddFriendSentMessageBtn svg {
+    margin-right: 8px;
+    padding-top: 3%;
+}
+.AddFriendCopyLinkBtn {
+    position: fixed;
+    width: 43%;
+    height: 8%;
+    border-radius: 7px;
+    border: 2px solid #3A3A3A;
+    z-index: 52;
+    bottom: 7.9%;
+    right: 4.4%;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    padding: 25px;
+}
+.AddFriendCopyLinkBtn svg {
+    margin-right: 8px;
+    padding-top: 3%;
+}
