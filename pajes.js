@@ -269,7 +269,21 @@ BlackDisblayFriend.addEventListener('click', () => {
 
 //Friend Share mesage
 
-var ReferalLink = 'https://t.me/rowlivebot' + '\n' +'Hi, follow the link and join the ROW-LIVE game'
+var ReferalLink = 'https://t.me/rowlivebot' + '\n' +'Hi, follow the link and join the ROW-LIVE game';
+let SecsessCopyOrSentMessage = document.querySelector('.SecsessCopyOrSentMessage').style.display = 'none';
+
+
+var counter = 0;
+
+function CopySecsessFunc() {
+    counter++;
+
+    if(counter == 1) {
+        clearInterval(counter);
+        document.querySelector('.SecsessCopyOrSentMessage').style.display = 'none';
+    }
+}
+
 
 function copyReferalLink() {
     navigator.clipboard.writeText(ReferalLink)
@@ -278,4 +292,9 @@ function copyReferalLink() {
         });
 }
 
-document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", copyReferalLink);
+document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", () => {
+    document.querySelector('.SecsessCopyOrSentMessage').style.display = 'block';
+    setInterval(CopySecsessFunc, 1000);
+    copyReferalLink;
+    counter = 0;
+});
