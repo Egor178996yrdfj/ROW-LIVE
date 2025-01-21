@@ -269,13 +269,3 @@ BlackDisblayFriend.addEventListener('click', () => {
 
 //Friend Share mesage
 
-var AddFriendCopyLinkBtn = document.querySelector('.AddFriendCopyLinkBtn');
-
-function shareMessage() {
-    const messagetest9 = 'Привет, это тест!';
-    tg.initDataUnsafe.shareMessage(messagetest9);
-}
-
-AddFriendCopyLinkBtn.addEventListener('click', shareMessage);
-
-
