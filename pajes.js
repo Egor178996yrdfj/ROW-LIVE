@@ -269,3 +269,13 @@ BlackDisblayFriend.addEventListener('click', () => {
 
 //Friend Share mesage
 
+var ReferalLink = 'https://t.me/rowlivebot' + '\n' +'Hi, follow the link and join the ROW-LIVE game'
+
+function copyReferalLink() {
+    navigator.clipboard.writeText(ReferalLink)
+        .catch(err => {
+            console.error('Ошибка при копировании текста: ', err);
+        });
+}
+
+document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", copyReferalLink);
