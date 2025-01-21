@@ -768,3 +768,18 @@ body{
     margin-right: 8px;
     padding-top: 3%;
 }
+.SecsessCopyOrSentMessage {
+    position: fixed;
+    width: 87%;
+    height: 6.2%;
+    background-color: #05D432;
+    border-radius: 40px;
+    z-index: 53;
+    text-align: center;
+    padding: 4%;
+    filter: drop-shadow(0 137 100px #00000000);
+    bottom: 6%;
+    left: 6.5%;
+    right: 6.5%;
+}
+
