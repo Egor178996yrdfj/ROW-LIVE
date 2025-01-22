@@ -127,6 +127,11 @@ TaskBtnMain.addEventListener('click', () => {
     document.querySelector('.buttonfriendsimg').style.bottom = '3.5%';
     document.getElementById('FriendBlueBtn').style.display = 'none';
     document.getElementById('FriendsMain').style.display = 'none'; 
+
+    document.getElementById('AirdropMain').style.display = 'none';
+    document.getElementById('AirdropBtnGolg').style.display = 'none';
+    document.getElementById('AirdropBtnGray').style.display = 'block';
+    document.querySelector('.buttonairdropimg').style.bottom = '3.5%';
 });
 
 window.onload = function() {
@@ -144,6 +149,11 @@ window.onload = function() {
             document.querySelector('.buttonfriendsimg').style.bottom = '3.5%';
             document.getElementById('FriendBlueBtn').style.display = 'none';
             document.getElementById('FriendsMain').style.display = 'none';
+
+            document.getElementById('AirdropMain').style.display = 'none';
+            document.getElementById('AirdropBtnGolg').style.display = 'none';
+            document.getElementById('AirdropBtnGray').style.display = 'block';
+            document.querySelector('.buttonairdropimg').style.bottom = '3.5%';
         });
     } else {
         console.error('Элемент HomeBtnGray не найден на странице.');
@@ -225,7 +235,7 @@ tg.setHeaderColor("#0d0d0d");
 
 //Friends main
 
-let FriendsMain = document.getElementById('FriendsMain').style.display = 'none';
+let MainByFriends = document.getElementById('FriendsMain').style.display = 'none';
 var FriendBlueBtn = document.getElementById('FriendBlueBtn').style.display = 'none';
 var FriendGrayBtn = document.getElementById('FriendGrayBtn');
 
@@ -244,7 +254,16 @@ FriendGrayBtn.addEventListener('click', () => {
     document.getElementById('HomeBtnGray').style.display = 'block';
     document.getElementById('HomeBtnID').style.display = 'none';
     document.querySelector('.buttonhomeimg').style.bottom = '3.5%';
+
+    document.getElementById('AirdropMain').style.display = 'none';
+    document.getElementById('AirdropBtnGolg').style.display = 'none';
+    document.getElementById('AirdropBtnGray').style.display = 'block';
+    document.querySelector('.buttonairdropimg').style.bottom = '3.5%';
+
+    document.getElementById('.MainByFriendsClass').style.display = 'block';
 });
+
+
 
 //Friend invite
 
@@ -299,3 +318,33 @@ document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", () => 
     counter = 0;
 });
 document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", copyReferalLink);
+
+//Airdrop main
+
+const AirdropBtnGray = document.getElementById('AirdropBtnGray');
+const AirdropBtnGolg = document.getElementById('AirdropBtnGolg').style.display = 'none';
+let AirdropMain = document.getElementById('AirdropMain').style.display='none';
+
+AirdropBtnGray.addEventListener('click', () => {
+    AirdropBtnGray.style.display = 'none';
+    document.getElementById('AirdropMain').style.display='block';
+    document.getElementById('AirdropBtnGolg').style.display = 'block';
+    document.getElementById('mainmenu').style.display = 'none';
+    document.getElementById('taskMain').style.display = 'none';
+    document.querySelector('.buttonairdropimg').style.bottom = '3.5%';
+
+    document.getElementById('HomeBtnGray').style.display = 'block';
+    document.getElementById('HomeBtnID').style.display = 'none';
+    document.querySelector('.buttonhomeimg').style.bottom = '3.5%';
+
+    document.querySelector('.buttonfriendsimg').style.bottom = '3.5%';
+    document.getElementById('FriendsMain').style.display = 'none';
+    document.getElementById('FriendBlueBtn').style.display = 'none';
+    document.getElementById('FriendGrayBtn').style.display = 'block';
+    
+    document.getElementById('TaskBtnTask').style.display = 'none';
+    TaskBtnMain.style.display = 'block';
+    document.querySelector('.buttontaskimg').style.bottom = '3.5%';
+});
+
+
