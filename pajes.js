@@ -269,7 +269,7 @@ BlackDisblayFriend.addEventListener('click', () => {
 
 //Friend Share mesage
 
-var ReferalLink = 'https://t.me/rowlivebot' + '\n' +'Hi, follow the link and join the ROW-LIVE game';
+
 let SecsessCopyOrSentMessage = document.querySelector('.SecsessCopyOrSentMessage').style.display = 'none';
 
 
@@ -284,6 +284,7 @@ function CopySecsessFunc() {
     }
 }
 
+var ReferalLink = 'https://t.me/rowlivebot' + '\n' +'Hi, follow the link and join the ROW-LIVE game';
 
 function copyReferalLink() {
     navigator.clipboard.writeText(ReferalLink)
@@ -295,6 +296,6 @@ function copyReferalLink() {
 document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", () => {
     document.querySelector('.SecsessCopyOrSentMessage').style.display = 'block';
     setInterval(CopySecsessFunc, 1000);
-    copyReferalLink;
     counter = 0;
 });
+document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", copyReferalLink);
