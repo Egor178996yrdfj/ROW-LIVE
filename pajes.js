@@ -41,7 +41,13 @@ var rowdayly_text_id = document.getElementById('rowdayly_text_id');
 let daily_claim_btn = document.getElementById('daily_claim_btn_img');
 
 daily_claim_btn.addEventListener('click', () => {
+    document.getElementById('AirdropMain').style.display='none';
     document.getElementById('daily_reward').style.display = 'none';
+    document.getElementById('account_age').style.display = 'none';
+    document.getElementById('taskMain').style.display = 'none';
+    document.getElementById('FriendsMain').style.display = 'none';
+    document.getElementById('ProfileMain').style.display = 'none';
+
     document.getElementById('main').style.display = 'block';
 })
 
@@ -96,6 +102,8 @@ setInterval(function() {
     document.getElementById('account_age').style.display = 'none';
     document.getElementById('taskMain').style.display = 'none';
     document.getElementById('FriendsMain').style.display = 'none';
+    document.getElementById('ProfileMain').style.display = 'none';
+    AirdropMain = document.getElementById('AirdropMain').style.display='none';
 }, 120000);
 
 // task
@@ -345,6 +353,23 @@ AirdropBtnGray.addEventListener('click', () => {
     document.getElementById('TaskBtnTask').style.display = 'none';
     TaskBtnMain.style.display = 'block';
     document.querySelector('.buttontaskimg').style.bottom = '3.5%';
+});
+
+//Profile main
+
+const ProfileMain = document.getElementById('ProfileMain').style.display = 'none';
+const buttonprofile = document.querySelector('.buttonprofile');
+
+buttonprofile.addEventListener('click', () => {
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('ProfileMain').style.display = 'block';
+});
+
+let BackBtnProfile = document.querySelector('.BackBtnProfile');
+
+BackBtnProfile.addEventListener('click', () => {
+    document.getElementById('main').style.display = 'block';
+    document.getElementById('ProfileMain').style.display = 'none';
 });
 
 
