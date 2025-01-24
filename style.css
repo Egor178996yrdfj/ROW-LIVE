@@ -859,24 +859,21 @@ body{
     padding-top: 0px;
 }
 .BackBtnProfile {
-    position: fixed;
-    top: 10.6%;
-    width: 18%;
-    height: 5%;
+    margin-top: 10px;
+    width: 57px;
+    height: 31px;
     background-color: #191919;
     border-radius: 150px;
     text-align: center;
-    left: 6.4%;
+    margin-left: 6.4%;
     vertical-align: middle;
 }
 .BackBtnProfile svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 9px;
+    z-index: 2;
 }
 .TopPanelText {
-    position: fixed;
+    position: absolute;
     font-size: 2.3rem;
     font-weight: 600;
     z-index: 2;
@@ -888,7 +885,7 @@ body{
     color: #FFFFFF;
 }
 .TopPanelLineUnderText {
-    position: fixed;
+    position: absolute;
     width: 50%;
     height: 3px;
     background-color: #529DD6;
@@ -899,41 +896,41 @@ body{
     justify-content: center;
 } 
 .BtnSettingsOnProfile {
-    position: fixed;
-    top: 10.6%;
-    width: 18%;
-    height: 5%;
+    position: absolute;
+    margin-top: -31px;
+    width: 57px;
+    height: 31px;
     background-color: #191919;
     border-radius: 150px;
     text-align: center;
-    right: 6.4%;
+    right: 7%;
     vertical-align: middle;
+    z-index: 3;
 }
 .BtnSettingsOnProfile svg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 5px;
+    z-index: 4;
 }
 .SkinSelectionPanel {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 47%;
     background-color: #131313;
-    top: 17%;
+    margin-top: 10px;
 }
 .TextUpdateOnSelection {
-    position: fixed;
+    position: absolute;
     font-size: 1rem;
     font-weight: 600;
     z-index: 2;
-    top: 20%;
+    margin-top: 30px;
     text-align: center;
     color: #FFFFFF;
-    left: 6.4%;
+    margin-left: 6.4%;
+    z-index: 2;
 }
 .textAfterSelectBlock {
-    position: fixed;
+    position: absolute;
     font-size: 0.8rem;
     font-weight: 500;
     z-index: 2;
@@ -945,9 +942,100 @@ body{
     color: #FFFFFF;
 }
 .YourProfilePanel {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 47%;
     background-color: #131313;
     top: 72%;
+}
+.YourProfilePanelText {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 2;
+    top: 75.1%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 6.4%;
+    z-index: 2;
+}
+.ExtensionBlockProfile {
+    position: absolute;
+    top: 152%;
+    width: 10px;
+    height: 1px;
+}
+.TotalScoreProfileText {
+    position: absolute;
+    top: 122%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-left: 6.4%;
+    z-index: 2;
+}
+.TotalScoreProfileTextComing {
+    position: absolute;
+    top: 130%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #2A2A2A;
+    display: block;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: 2;
+}
+.BackPanelSkin1 {
+    position: absolute;
+    width: 36.8%;
+    height: 27.9%;
+    background-color: #1C1C1C;
+    border-radius: 10px;
+    left: 6.4%;
+    top: 26.7%;
+    z-index: 3;
+}
+.PanelNameSkin1 {
+    position: absolute;
+    width: 36.8%;
+    height: 4%;
+    left: 6.4%;
+    top: 26.7%;
+    background-color: #272727;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 4;
+    text-align: center;
+}
+.PanelNameSkin1 p {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 4.3%;
+}
+.SkinImgStandart1 {
+    position: absolute;
+    width: 34.3%;
+    height: 16.3%;
+    left: 6.4%;
+    top: 34.6%;
+    z-index: 5;
+}
+.BtnClaimSkin1 {
+    position: absolute;
+    background: linear-gradient(to right, #0088CC, #272727);
+    border-radius: 10px;
+    width: 36.8%;
+    height: 4.3%;
+    left: 6.4%;
+    top: 55.5%;
+    z-index: 4;
+}
+.BtnClaimSkin1 p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 5%;
 }
