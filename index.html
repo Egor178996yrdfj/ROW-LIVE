@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Group 212.png">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -432,14 +433,17 @@
             </svg>
         </div>
         <div class="SkinSelection">
-            <div class="SkinSelectionPanel"></div>
+            <div class="SkinSelectionPanel">
+                <div class="ScinSelectContent">
+                    <div class="BackPanelSkin1"></div>
+                    <div class="PanelNameSkin1"><p>Standard</p></div>
+                    <img src="StandartSkin1.svg" class="SkinImgStandart1">
+                    <div class="BtnClaimSkin1"><p>FREE</p></div>
+                </div>
+            </div>
             <div class="TextUpdateOnSelection">
                 <p>Update your skin</p>
             </div>
-            <div class="BackPanelSkin1"></div>
-            <div class="PanelNameSkin1"><p>Standard</p></div>
-            <img src="StandartSkin1.svg" class="SkinImgStandart1">
-            <div class="BtnClaimSkin1"><p>FREE</p></div>
         </div>
         <div class="textAfterSelectBlock">
             <p>Skins will soon become NFT and...</p>
@@ -481,7 +485,7 @@
                 // Обработчик события нажатия на кнопку оплаты
                 document.getElementById("payButton").addEventListener("click", async () => {
                     const transaction = {
-                        to: "UQDDEEbNMPfVwpL2q1zi5oAbChXADLuZp4gCOdFoHDmHo4Nn", // Замените на ваш адрес
+                        to: "UQDDEEbNMPfVwpL2q1zi5oAbChXADLuZp4gCOdFoHDmHo4Nn",
                         amount: 1e9, // Указываем 1 TON (в основном это 1 миллиард наноTON)
                         currency: "TON",
                         message: "Оплата за услугу" // Сообщение для транзакции (опционально)
