@@ -917,16 +917,19 @@ body{
     height: 47%;
     background-color: #131313;
     margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 .TextUpdateOnSelection {
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
     z-index: 2;
-    margin-top: 30px;
+    margin-top: 32px;
     text-align: center;
     color: #FFFFFF;
-    margin-left: 6.4%;
+    margin-left: 8%;
     z-index: 2;
 }
 .textAfterSelectBlock {
@@ -934,7 +937,7 @@ body{
     font-size: 0.8rem;
     font-weight: 500;
     z-index: 2;
-    top: 67%;
+    top: 66.5%;
     left: 0px;
     right: 0px;
     display: block;
@@ -989,19 +992,19 @@ body{
 .BackPanelSkin1 {
     position: absolute;
     width: 36.8%;
-    height: 27.9%;
+    height: 170px;
     background-color: #1C1C1C;
     border-radius: 10px;
     left: 6.4%;
-    top: 26.7%;
+    top: 20%;
     z-index: 3;
 }
 .PanelNameSkin1 {
     position: absolute;
     width: 36.8%;
-    height: 4%;
+    height: 30px;
     left: 6.4%;
-    top: 26.7%;
+    top: 20%;
     background-color: #272727;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -1012,14 +1015,14 @@ body{
     color: #FFFFFF;
     font-size: 0.8rem;
     font-weight: 400;
-    margin-top: 4.3%;
+    margin-top: 6%;
 }
 .SkinImgStandart1 {
     position: absolute;
-    width: 34.3%;
-    height: 16.3%;
+    width: 34%;
+    height: 34%;
     left: 6.4%;
-    top: 34.6%;
+    top: 36%;
     z-index: 5;
 }
 .BtnClaimSkin1 {
@@ -1027,9 +1030,9 @@ body{
     background: linear-gradient(to right, #0088CC, #272727);
     border-radius: 10px;
     width: 36.8%;
-    height: 4.3%;
+    height: 30px;
     left: 6.4%;
-    top: 55.5%;
+    top: 240px;
     z-index: 4;
 }
 .BtnClaimSkin1 p{
@@ -1037,5 +1040,9 @@ body{
     font-size: 0.8rem;
     font-weight: 400;
     color: #FFFFFF;
-    margin-top: 5%;
+    margin-top: 6%;
+}
+.ScinSelectContent {
+    display: inline-block;
+    width: 130%;
 }
