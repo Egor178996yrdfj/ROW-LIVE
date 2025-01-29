@@ -273,6 +273,30 @@ FriendGrayBtn.addEventListener('click', () => {
 
 
 
+// friend code send server
+
+const code = Math.random().toString(36).substring(2, 8);
+
+fetch('http://127.0.0.1:5000/generate', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ code: code })
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Ошибка при отправке кода на сервер');
+    }
+    return response.json();
+})
+.then(data => {
+    console.log(data);
+})
+.catch(error => {
+    document.getElementById('ReferalcodeId').innerText = error.message;
+});
+
 //Friend invite
 
 var InvieButtonFriendID = document.getElementById('InvieButtonFriendID');
@@ -294,6 +318,40 @@ BlackDisblayFriend.addEventListener('click', () => {
     document.getElementById('InviteMenuFriend').style.display = 'none';
 });
 
+//friends referal code
+
+const SendReferalCode = document.querySelector('.SendReferalCode');
+
+SendReferalCode.addEventListener('click', function() {
+    const code = document.getElementById('codeInput').value.trim();
+
+    if (!code) {
+        document.getElementById('ReferalcodeId').placeholder = 'Пожалуйста, введите код.';
+        return;
+    }
+
+    fetch('http://127.0.0.1:5000/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ code: code })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Ошибка при отправке кода на сервер');
+        }
+        return response.json();
+    })
+    .then(data => {
+        document.getElementById('ReferalcodeId').placeholder = data.message;
+    })
+    .catch(error => {
+        document.getElementById('ReferalcodeId').placeholder = error.message;
+    });
+});
+
+
 //Friend Share mesage
 
 
@@ -311,7 +369,7 @@ function CopySecsessFunc() {
     }
 }
 
-var ReferalLink = 'https://t.me/rowlivebot' + '\n' +'Hi, follow the link and join the ROW-LIVE game';
+var ReferalLink = 'Hi, join me play the game.' + '\n' + 'https://t.me/rowlivebot' + '\n' +'Enter the code and add me as a friend' + '\n\n' + code;
 
 function copyReferalLink() {
     navigator.clipboard.writeText(ReferalLink)
@@ -326,6 +384,8 @@ document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", () => 
     counter = 0;
 });
 document.querySelector(".AddFriendCopyLinkBtn").addEventListener("click", copyReferalLink);
+
+
 
 //Airdrop main
 
@@ -373,3 +433,83 @@ BackBtnProfile.addEventListener('click', () => {
 });
 
 
+
+// input animation
+
+const inputField = document.querySelector('.ReferalcodeInput');
+
+inputField.addEventListener('input', function() {
+    if (this.value.length > 0) {
+        this.classList.add('enlarged');
+    } else {
+        this.classList.remove('enlarged');
+    }
+});
+
+// send btn animation 
+
+const button = document.querySelector('.SendReferalCode');
+
+button.addEventListener('mousedown', () => {
+    button.style.transform = 'scale(0.9)'; // Уменьшаем кнопку
+    let timeoutNumber = 0;
+    timeoutNumber ++;
+    if (timeoutNumber == 1) {
+        setTimeout (() => {
+            button.style.transform = 'scale(1)'
+            timeoutNumber = 0;
+        }, 100);
+    };
+});
+
+
+//server server server server server server server server server server server server server
+
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+// Хранение сгенерированных кодов и их статистики
+let codes = {};
+
+app.post('/generate', (req, res) => {
+    const code = req.body.code;
+
+    // Валидация кода
+    if (!code || typeof code !== 'string' || code.length < 6) {
+        return res.status(400).json({ status: 'error', message: 'Неверный код.' });
+    }
+
+    codes[code] = { count: 0 };
+    return res.json({ status: 'success' });
+});
+
+app.post('/submit', (req, res) => {
+    const code = req.body.code;
+
+    // Валидация кода
+    if (!code || typeof code !== 'string') {
+        return res.status(400).json({ message: 'Код не может быть пустым.' });
+    }
+
+    if (code in codes) {
+        codes[code].count += 1;
+        return res.json({ message: 'Молодец! Код совпадает.' });
+    } else {
+        return res.status(404).json({ message: 'Код не найден.' });
+    }
+});
+
+app.get('/stats', (req, res) => {
+    return res.json(codes);
+});
+
+// Запуск сервера
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Сервер запущен на порту ${PORT}`);
+});
