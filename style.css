@@ -616,15 +616,55 @@ body{
     color: #FFFFFF;
     font-weight: 400;
 }
+.ReferalcodeInput {
+    position: fixed;
+    width: 62.6%;
+    left: 6%;
+    border-radius: 7px;
+    border: 2px solid #515151;
+    height: 6%;
+    background-color: #191919;
+    top: 36%;
+    color: #727272;
+    padding-left: 6%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+.ReferalcodeInput.enlarged {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.SendReferalCode {
+    position: fixed;
+    right: 6%;
+    height: 6%;
+    width: 24%;
+    border: 2px solid #515151;
+    background-color: #191919;
+    text-align: center;
+    color: #358344;
+    top: 36%;
+    border-radius: 7px;
+    font-weight: 500;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+.SendReferalCode:active {
+    transform: scale(0.9); 
+}
 .RowTotalFriend {
     position: fixed;
     width: 88%;
     height: 3%;
     left: 6%;
     right: 6%;
-    top: 38.8%;
-    background-color: #191919;
-    border-radius: 17px;
+    top: 44%;
+    background-color: #242323;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    z-index: 2;
 }
 .TotalFriend {
     position: fixed;
@@ -632,7 +672,7 @@ body{
     font-weight: 400;
     height: 3%;
     z-index: 2;
-    top: 39.4%;
+    top: 44.4%;
     left: 10%;
     color: #FFFFFF;
 }
@@ -642,7 +682,7 @@ body{
     font-weight: 400;
     height: 3%;
     z-index: 2;
-    top: 39.4%;
+    top: 44.4%;
     right: 10%;
     color: #FFFFFF;
 }
@@ -992,7 +1032,7 @@ body{
 .BackPanelSkin1 {
     position: absolute;
     width: 36.8%;
-    height: 170px;
+    height: 190px;
     background-color: #1C1C1C;
     border-radius: 10px;
     left: 6.4%;
@@ -1022,7 +1062,7 @@ body{
     width: 34%;
     height: 34%;
     left: 6.4%;
-    top: 36%;
+    top: 40%;
     z-index: 5;
 }
 .BtnClaimSkin1 {
@@ -1032,7 +1072,7 @@ body{
     width: 36.8%;
     height: 30px;
     left: 6.4%;
-    top: 240px;
+    top: 260px;
     z-index: 4;
 }
 .BtnClaimSkin1 p{
