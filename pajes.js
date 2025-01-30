@@ -111,7 +111,7 @@ setInterval(function() {
 let NoQuestsID1 = document.getElementById('NoQuestsID1').style.display = 'none';
 
 let TaskBtnMain = document.getElementById('TaskBtnMain');
-let HomeBtnGray = document.getElementById('HomeBtnGray').style.display = 'none';
+const HomeBtnGray = document.getElementById('HomeBtnGray').style.display = 'none';
 let taskMain = document.getElementById('taskMain').style.display = 'none';
 let TaskBtnTask = document.getElementById('TaskBtnTask').style.display = 'none';
 let mainmenu = document.getElementById('mainmenu').style.display = 'block';
@@ -162,6 +162,7 @@ window.onload = function() {
             document.getElementById('AirdropBtnGolg').style.display = 'none';
             document.getElementById('AirdropBtnGray').style.display = 'block';
             document.querySelector('.buttonairdropimg').style.bottom = '3.5%';
+            
         });
     } else {
         console.error('Элемент HomeBtnGray не найден на странице.');
@@ -462,6 +463,19 @@ button.addEventListener('mousedown', () => {
     };
 });
 
+const buttonInvite = document.querySelector('.InvieButtonFriend');
+
+buttonInvite.addEventListener('mousedown', () => {
+    buttonInvite.style.transform = 'scale(0.9)'; // Уменьшаем кнопку
+    let timeoutNumber = 0;
+    timeoutNumber ++;
+    if (timeoutNumber == 1) {
+        setTimeout (() => {
+            buttonInvite.style.transform = 'scale(1)'
+            timeoutNumber = 0;
+        }, 100);
+    };
+});
 
 //server server server server server server server server server server server server server
 
