@@ -601,7 +601,7 @@ body{
     font-size: 1.45rem;
     font-weight: 400;
     z-index: 2;
-    top: 20%;
+    top: 19%;
     left: 0px;
     right: 0px;
     text-align: center;
@@ -717,6 +717,11 @@ body{
     bottom: 16.6%;
     background-color: #0098EA;
     border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+.InvieButtonFriend:active {
+    transform: scale(0.9); 
 }
 .InvieButtonFriend p {
     position: fixed;
@@ -726,11 +731,12 @@ body{
     height: 6.6%;
     left: 6%;
     right: 6%;
-    top: 78.4%;
+    margin-top: 11px;
     color: #FFFFFF;
     text-align: center;
     align-items:center;
     justify-content:center;
+    vertical-align: middle;
 }
 .BlackDisblayFriend {
     position: fixed;
