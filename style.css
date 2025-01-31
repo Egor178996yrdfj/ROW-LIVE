@@ -789,6 +789,10 @@ body{
     -webkit-tap-highlight-color: transparent;
     text-align: center;
     padding: 10px;
+    transition: transform 0.1s;
+}
+.AddFriendSentMessageBtn:active {
+    transform: scale(0.9); 
 }
 .AddFriendSentMessageBtn svg {
     margin-right: 8px;
@@ -811,10 +815,14 @@ body{
     -webkit-tap-highlight-color: transparent;
     text-align: center;
     padding: 25px;
+    transition: transform 0.1s;
 }
 .AddFriendCopyLinkBtn svg {
     margin-right: 8px;
     padding-top: 3%;
+}
+.AddFriendCopyLinkBtn:active {
+    transform: scale(0.9); 
 }
 .SecsessCopyOrSentMessage {
     position: fixed;
