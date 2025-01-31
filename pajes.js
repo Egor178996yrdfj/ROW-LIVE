@@ -477,6 +477,33 @@ buttonInvite.addEventListener('mousedown', () => {
     };
 });
 
+const AddFriendSentMessageBtn = document.querySelector('.AddFriendSentMessageBtn');
+
+AddFriendSentMessageBtn.addEventListener('mousedown', () => {
+    AddFriendSentMessageBtn.style.transform = 'scale(0.9)'; // Уменьшаем кнопку
+    let timeoutNumber = 0;
+    timeoutNumber ++;
+    if (timeoutNumber == 1) {
+        setTimeout (() => {
+            AddFriendSentMessageBtn.style.transform = 'scale(1)'
+            timeoutNumber = 0;
+        }, 100);
+    };
+});
+const AddFriendCopyLinkBtn = document.querySelector('.AddFriendCopyLinkBtn');
+
+AddFriendCopyLinkBtn.addEventListener('mousedown', () => {
+    AddFriendCopyLinkBtn.style.transform = 'scale(0.9)'; // Уменьшаем кнопку
+    let timeoutNumber = 0;
+    timeoutNumber ++;
+    if (timeoutNumber == 1) {
+        setTimeout (() => {
+            AddFriendCopyLinkBtn.style.transform = 'scale(1)'
+            timeoutNumber = 0;
+        }, 100);
+    };
+});
+
 //server server server server server server server server server server server server server
 
 const express = require('express');
